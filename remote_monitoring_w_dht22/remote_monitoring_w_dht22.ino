@@ -7,8 +7,10 @@
 #include <time.h>
 #include "remote_monitoring.h"
 
-char ssid[] = "[SSID]"; //  your WiFi SSID (name)
-char pass[] = "[PASSWORD]";    // your WiFi password (use for WPA, or use as key for WEP)
+//char ssid[] = "[SSID]"; //  your WiFi SSID (name)
+//char pass[] = "[PASSWORD]";    // your WiFi password (use for WPA, or use as key for WEP)
+const char ssid[] = "AttunixGuest";
+const char pass[] = "a77un!><";
 int status = WL_IDLE_STATUS;
 
 void setup() {

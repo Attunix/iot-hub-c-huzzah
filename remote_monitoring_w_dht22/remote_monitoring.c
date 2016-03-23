@@ -7,10 +7,16 @@
 
 
 // Find under Microsoft Azure IoT Suite -> DEVICES -> <your device> -> Device Details and Authentication Keys
-static const char* deviceId = "[DEVICEID]";
-static const char* deviceKey = "[KEY 1 or 2]";
-static const char* hubName = "[HOSTNAME]";
+//static const char* deviceId = "[DEVICEID]";
+//static const char* deviceKey = "[KEY 1 or 2]";
+//static const char* hubName = "[HOSTNAME]";
+//static const char* hubSuffix = "azure-devices.net";
+static const char* deviceId = "raspy";
+static const char* deviceKey = "R3YaruxyEQ0eCi/JXglY1A==";
+static const char* hubName = "RaspPi47914";
 static const char* hubSuffix = "azure-devices.net";
+const char connectionString[] = "HostName=RaspPi47914.azure-devices.net;DeviceId=raspy;SharedAccessKey=R3YaruxyEQ0eCi/JXglY1A==";
+
 
 // Define the Model
 BEGIN_NAMESPACE(Contoso);
