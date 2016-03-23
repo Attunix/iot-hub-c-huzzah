@@ -12,30 +12,7 @@ extern "C" {
 #endif
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// Param: Connection_string__cp  An ASCIIZ string containing a set of parameters including a URL
-//                               and connection keys. i.e.
-//                               "HostName=AuricIoTHubPiC.azure-devices.net;DeviceId=08578f25-777e-438b-876b-e2cfed911ab0;SharedAccessKey=Vg7u5edztBGW89KwHWvsHw=="
-// Returns: true if string updated.
-//          false if the string was too long (increase MAX_CONNECTION_STRING_LEN if you need to).
-bool cmd_ctr_set_connection_string(const char * Connection_string__cp);
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Returns: CMD_CTR_HTTP_INIT_SUCCESS upon a successful initialization.
-//          Values less than CMD_CTR_HTTP_INIT_SUCCESS indicate fewer successful steps during initialization.
-#define CMD_CTR_HTTP_INIT_SUCCESS (4)
-int cmd_ctr_http_init(void);
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Cleanup. May not be needed for embedded applications.
-void cmd_ctr_http_deinit(void);
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Call this when it's time to update the next sample in the outgoing stream.
-void cmd_ctr_http_send_data(float Temp_c__f, float Humi_pct__f);
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Call this about 10 times per second.
-void cmd_ctr_http_run(void);
+void simplesample_http_run(void);
 
 #ifdef __cplusplus
 }
